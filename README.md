@@ -49,9 +49,9 @@ modified --> git add;
 
 ```mermaid
 graph LR;
-untracked --> staged + tracked: git add;
-staged + tracked --> tracked: git commit -m "message";
-tracked --> modified: Изменение;
-modified --> staged: git add;
+untracked -- git add --> staged + tracked;
+staged + tracked -- git commit -m "message" --> tracked;
+tracked -- Изменение --> modified;
+modified -- git add --> staged;
 ```
 
