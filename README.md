@@ -49,7 +49,7 @@ graph LR;
 
 ```mermaid
 graph LR;
-  untracked -- "git add" --> B["staged + tracked"];
+  untracked -- "git add" --> STGD["staged + tracked"];
   STGD["staged + tracked"] -- "git commit -m 'message'" --> tracked;
   tracked -- "Изменение" --> modified;
   modified -- "git add" --> STGD["staged + tracked"];
