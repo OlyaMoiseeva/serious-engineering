@@ -27,3 +27,20 @@ git push -u origin master
 
 все
 
+# Жизненный цикл файлов
+
+```mermaid
+untracked --> git add tracked + staged
+git add --> git commit -m "message" tracked
+git commit -m "message" tracked --> Изменение файла
+Изменение файла --> modified
+modified --> git add
+```
+
+```mermaid
+untracked --> staged + tracked: git add
+staged + tracked --> tracked: git commit -m "message"
+tracked --> modified: Изменение
+modified --> staged: git add
+```
+
