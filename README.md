@@ -55,3 +55,7 @@ graph LR;
   modified -- "git add" --> staged;
 ```
 
+```mermaid   
+graph LR; 
+  untracked -- "git add" --> staged + tracked;
+```
