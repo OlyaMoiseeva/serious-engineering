@@ -30,6 +30,7 @@ git push -u origin master
 # Жизненный цикл файлов
 
 ```mermaid
+graph LR;
 untracked --> git add tracked + staged
 git add --> git commit -m "message" tracked
 git commit -m "message" tracked --> Изменение файла
@@ -38,6 +39,7 @@ modified --> git add
 ```
 
 ```mermaid
+graph LR;
 untracked --> staged + tracked: git add
 staged + tracked --> tracked: git commit -m "message"
 tracked --> modified: Изменение
