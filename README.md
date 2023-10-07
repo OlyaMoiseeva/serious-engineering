@@ -40,18 +40,18 @@ graph LR;
 
 ```mermaid
 graph LR;
-untracked --> git add tracked + staged;
-git add --> git commit -m "message" tracked;
-git commit -m "message" tracked --> Изменение файла;
-Изменение файла --> modified;
-modified --> git add;
+  untracked --> git add tracked + staged;
+  git add --> git commit -m "message" tracked;
+  git commit -m "message" tracked --> Изменение файла;
+  Изменение файла --> modified;
+  modified --> git add;
 ```
 
 ```mermaid
 graph LR;
-untracked -- git add --> staged + tracked;
-staged + tracked -- git commit -m "message" --> tracked;
-tracked -- Изменение --> modified;
-modified -- git add --> staged;
+  untracked -- "git add" --> staged + tracked;
+  staged + tracked -- "git commit -m 'message'" --> tracked;
+  tracked -- "Изменение" --> modified;
+  modified -- "git add" --> staged;
 ```
 
