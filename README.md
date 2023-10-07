@@ -27,25 +27,7 @@ git push -u origin master
 
 все
 
-```mermaid
-graph LR;
-  untracked -- "git add" --> staged;
-  staged    -- "???"     --> tracked/comitted;
-
-%% стрелка без текста для примера: 
-  A --> B;
-```
-
 # Жизненный цикл файлов
-
-```mermaid
-graph LR;
-  untracked --> B["git add tracked + staged"];
-  git add --> git commit -m "message" tracked;
-  git commit -m 'message' tracked --> Изменение файла;
-  Изменение файла --> modified;
-  modified --> git add;
-```
 
 ```mermaid
 graph LR;
