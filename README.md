@@ -61,3 +61,11 @@ graph LR;
   tracked -- "Изменение" --> modified;
   modified -- "git add" --> STGD["staged + tracked"];
 ```
+
+## Изменение последнего коммита
+
+```
+git commit --amend
+git commit --amend --no-edit
+git commit --amend -m 'message'
+```
