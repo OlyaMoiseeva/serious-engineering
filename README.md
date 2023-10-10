@@ -65,23 +65,23 @@ graph LR;
 ## Изменение последнего коммита
 
 ```
-git commit --amend
-git commit --amend --no-edit
-git commit --amend -m 'message'
+git commit --amend // откроет nano или vim
+git commit --amend --no-edit // добавит изменения без смены текста коммита
+git commit --amend -m 'message' // отредактирует коммит
 ```
 
 ## Откат изменений
 
 ```
-git restore --staged <file>
-git restore <file>
-git reset --hard <commit hash>
+git restore --staged <file> // откатит проиндексированное
+git restore <file> // откатит измененное
+git reset --hard <commit hash> // откатит до коммита
 ```
 
 ## Посмотреть изменения
 
 ```
-git diff
-git diff --staged
-git diff <коммит1> <коммит2>
+git diff // измененное vs закомиченное
+git diff --staged // проиндексированное vs закомиченное
+git diff <коммит1> <коммит2> // сравнит 2 коммита
 ```
