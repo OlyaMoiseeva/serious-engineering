@@ -69,3 +69,19 @@ git commit --amend
 git commit --amend --no-edit
 git commit --amend -m 'message'
 ```
+
+## Откат изменений
+
+```
+git restore --staged <file>
+git restore <file>
+git reset --hard <commit hash>
+```
+
+## Посмотреть изменения
+
+```
+git diff
+git diff --staged
+git diff <коммит1> <коммит2>
+```
